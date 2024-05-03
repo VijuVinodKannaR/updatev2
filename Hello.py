@@ -1,6 +1,5 @@
 import streamlit as st
 import time
-import tkinter
 import subprocess
 
 session_state = st.session_state
