@@ -10,7 +10,7 @@ def google_chrome():
 
         my_bar = st.progress(0, text=progress_text)
 
-        subprocess.run(["start", "cmd", "-Command", "winget upgrade teams --disable-interactivity"],  shell=True, check=True)
+        subprocess.run(["start", "cmd", "-Command", "winget upgrade chrome --disable-interactivity"],  shell=True, check=True)
 
         for percent_complete in range(100):
             time.sleep(0.01)
