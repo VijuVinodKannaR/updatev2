@@ -10,7 +10,7 @@ def google_chrome():
 
         my_bar = st.progress(0, text=progress_text)
 
-        subprocess.run(["winget", "upgrade", "remote desktop", "--disable-interactivity"], check=True)
+        subprocess.run(["start", "powershell", "-Command", "winget upgrade remote desktop --disable-interactivity"],  shell=True, check=True)
 
         for percent_complete in range(100):
             time.sleep(0.01)
