@@ -9,6 +9,7 @@ def google_chrome():
         progress_text = "Checking for updates... Please wait..."
 
         my_bar = st.progress(0, text=progress_text)
+        subprocess.run(["C:\\Windows\\system32\\cmd.exe","winget", "upgrade", "chrome", "--disable-interactivity"], check=True)
 
         subprocess.run(["cmd.exe", "/C", "winget upgrade chrome --disable-interactivity"], check=True)
 
